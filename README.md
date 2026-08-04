@@ -1,17 +1,19 @@
-# mcp-feodotracker
+# @pipeworx/feodotracker
 
-Feodo Tracker MCP — botnet C&C IP blocklist from abuse.ch.
+[Feodo Tracker](https://feodotracker.abuse.ch) MCP — abuse.ch's tracker of botnet command-and-control infrastructure for Dridex, Emotet, Qakbot, Heodo, TrickBot, and others. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `list` | Current C&C blocklist (optional malware-family / status filter). |
-| `check_ip` | Check whether a given IPv4 is on the current blocklist. |
-| `recent` | Blocklist entries first seen in the last N hours. |
-| `aggressive` | Full aggressive blocklist (includes older + lower-confidence IPs). |
+- `list(family?, status?)` — current C&C IP blocklist (entire list, optional family/status filter)
+- `check_ip(ip)` — is the given IP currently listed as botnet C&C?
+- `recent(hours?)` — entries first seen in the last N hours
+- `aggressive()` — full aggressive blocklist (includes older + lower-confidence IPs)
+
+## Data source
+
+`https://feodotracker.abuse.ch/downloads/ipblocklist.json` (cached 15 min by the gateway).
 
 ## Quick Start
 
@@ -27,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
