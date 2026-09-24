@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/feodotracker",
   "title": "Feodotracker",
-  "description": "abuse.ch Feodo Tracker botnet C&C IP blocklist",
-  "version": "0.1.0",
+  "description": "Feodo Tracker MCP — botnet C&C IP blocklist from abuse.ch.",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/feodotracker",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-feodotracker",
