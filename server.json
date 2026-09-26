@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/feodotracker",
   "title": "Feodotracker",
   "description": "Feodo Tracker MCP — botnet C&C IP blocklist from abuse.ch.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/feodotracker",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-feodotracker",
