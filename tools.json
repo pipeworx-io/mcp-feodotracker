@@ -1,0 +1,59 @@
+[
+  {
+    "name": "list",
+    "description": "Current C&C blocklist (optional malware-family / status filter).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "family": {
+          "type": "string",
+          "description": "e.g. \"Dridex\", \"Emotet\", \"Qakbot\", \"TrickBot\""
+        },
+        "status": {
+          "type": "string",
+          "description": "e.g. \"online\", \"offline\""
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-5000 (default 500)"
+        }
+      }
+    }
+  },
+  {
+    "name": "check_ip",
+    "description": "Check whether a given IPv4 is on the current blocklist.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ip": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ip"
+      ]
+    }
+  },
+  {
+    "name": "recent",
+    "description": "Blocklist entries first seen in the last N hours.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "hours": {
+          "type": "number",
+          "description": "Default 24, max 720 (30 days)."
+        }
+      }
+    }
+  },
+  {
+    "name": "aggressive",
+    "description": "Full aggressive blocklist (includes older + lower-confidence IPs).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
