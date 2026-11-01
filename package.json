@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-feodotracker",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Feodo Tracker MCP — botnet C&C IP blocklist from abuse.ch.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "feodotracker",
     "gatewaySlug": "feodotracker",
-    "sourceHash": "v1-884edfcf37b5df68f31872b2a028592292f1a3d3a6155512b3fba83ac61c7569",
-    "sourceCommit": "06a6b405041923c5ddf2ac2436e7c049e635f464"
+    "sourceHash": "v1-f6728485e243e4991a2e12c199f4d72d60a4c127bce17a3d1cb9f22cc1d73098",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
